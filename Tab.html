@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Tabs</title>
+</head>
+<body>
+    <h2 style="text-align: center; margin: 10px 0 10px 0;">Tabs</h2>
+
+            <ul class="tabs">
+                <li><a href="javascript:tabSwitch('tab_1', 'content_1');" id="tab_1" class="active">Home</a></li>
+                <li><a href="javascript:tabSwitch('tab_2', 'content_2');" id="tab_2">Profile</a></li>
+                <li><a href="javascript:tabSwitch('tab_3', 'content_3');" id="tab_3">Contact</a></li>
+            </ul>
+             
+            <div id="content_1" class="content1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam reiciendis architecto odio dicta, quas sit aperiam nulla, laborum eius animi ipsam iste? Hic impedit, laboriosam porro rem eius eum minus.</div>
+            <div id="content_2" class="content1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis nesciunt sunt, eligendi molestiae nisi adipisci molestias itaque! Consequuntur, at dolorem saepe mollitia libero explicabo ipsam quo quidem, beatae, quasi id.</div>
+            <div id="content_3" class="content1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente corrupti rerum obcaecati atque minus esse ducimus nostrum totam libero dolores, sunt minima voluptatem nihil nemo excepturi iusto molestiae dicta vero.</div>
+
+     
+
+    <script>
+        function tabSwitch(new_tab, new_content) {
+	
+            document.getElementById('content_1').style.display = 'none';
+            document.getElementById('content_2').style.display = 'none';
+            document.getElementById('content_3').style.display = 'none';		
+            document.getElementById(new_content).style.display = 'block';	
+            document.getElementById('tab_1').className = '';
+            document.getElementById('tab_2').className = '';
+            document.getElementById('tab_3').className = '';		
+            document.getElementById(new_tab).className = 'active';		
+
+        }
+    </script>
+</body>
+</html>

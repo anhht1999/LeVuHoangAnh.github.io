@@ -1,0 +1,138 @@
+/* According */
+
+.collapsible {
+    color:blue;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    outline-style:solid ;
+    outline-width: 2px;
+    outline-color:#efefef;
+    font-size: 15px;
+}
+  .collapsible:after {
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+  .content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out; 
+}
+
+/* Tabs */
+
+ul.tabs {
+    margin:0px; 
+    padding:0px;
+    margin-bottom: 7px!important;
+}
+ul.tabs li {
+    list-style:none;
+    display:inline;
+}
+
+ul.tabs li a {
+    color:blue;
+    padding:8px 14px 8px 14px;
+    text-decoration:none;
+}
+ul.tabs li a.active {
+    background-color:#ffffff;
+    color:#282e32;
+    border:1px solid #949fb0; 
+    border-radius:3px;
+    border-bottom: 1px solid #ffffff;
+}
+.content1 {
+    background-color:#ffffff;
+    padding:10px;
+    border:1px solid #949fb0;   
+}
+#content_2, #content_3 { display:none; }
+ul.tabs {
+    margin:0px; padding:0px;
+    margin-top:5px;
+    margin-bottom:6px;
+}
+
+/* Toast */
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    left: 38%;
+    height:100%;
+    width: 100%;
+    overflow: auto;
+  }
+  
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    border-radius: 5px;
+    width: 20%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+
+#time{
+    float:right;
+    padding:0 15px 0 0;
+}
+
+#logo {
+    float:left;
+    padding-left: 20px;
+}
+#content2{
+    padding-left:5px;
+}
+.close {
+    float: right;
+    font-size: 25px;
+    font-weight: bold;
+    margin-right: 5px;
+    padding-right: 15px;
+    margin-top: -5px;
+} 
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+.modal-body {
+      background-color:#888;
+      padding: 2px 20px;
+    }
+.modal-header{
+    padding:10px 0 10px 0;
+}
+
+/* silde1 */
+
