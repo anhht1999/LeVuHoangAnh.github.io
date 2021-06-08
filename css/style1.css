@@ -19,41 +19,18 @@
     height:285px;
     text-align: center;
   }
-  .left{
-    width: 20% ;
-    float: left;
-    background-color: #e38d98;
-    height: 600px;
-  }
-  .right{
-    width: 20% ;
-    float: right;
-    background-color: #e38d98;
-    height: 600px;
-  }
   @media screen and (max-width: 768px) {
 
-    .left{
-        display:none;
-        float: none;
-    }
-    .right{
-        display:none;
-        float:none;
-    }
-    body{
-        background-color: #e38d98;
-    }
     .wrapper-grid {
       grid-template-columns: repeat(1, 1fr);
-      margin: 0 15px 0 15px;
+      margin-right: 15px;
+      margin-left: 15px;
     }
   }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 769px) {
     .wrapper-grid {
       grid-template-columns: repeat(3, 1fr);
       width: 60%; 
-      float: left;
-      margin:0;
+      margin:0 auto;
     }
   }
